@@ -1,9 +1,11 @@
 import React from 'react';
 
-export interface Props {};
+type HomeProps = {
+  title?: string,
+};
 
-const Home: React.FC<Props> = () => {
-    return (<div><h1>Home heading</h1><br /><p>Home page</p></div>);
+const Home = ({title}: HomeProps) => {
+    return (<div><h1>Home heading {title}</h1><br /><p>Home page</p></div>);
 };
 
 export default Home;

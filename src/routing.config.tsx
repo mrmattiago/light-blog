@@ -13,7 +13,7 @@ const Routing = () => (
               <Route
                 exact={route.exact}
                 path={route.path}
-                render={(props) => {
+                render={(props: any) => {
                   return <route.component {...props} />
                 }}
               />
