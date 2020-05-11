@@ -2,16 +2,19 @@
 import { jsx } from '@emotion/core'
 import { FunctionComponent } from 'react';
 import Header from '../Header';
-import { pageWrapper } from './PageWrapper.style';
+import Footer from '../Footer';
+import {pageWrapper, mainContent, container} from './PageWrapper.style';
 
 type Props = {};
 
 const PageWrapper: FunctionComponent<Props> = (props) => {
   return (
     <div css={pageWrapper}>
-      <Header name="test" />
-      <main>{props.children}</main>
-      <footer>footer</footer>
+      <Header />
+      <div css={mainContent}>
+      <div css={container}>{props.children}</div>
+      </div>
+      <Footer />
     </div>
   );
 } 

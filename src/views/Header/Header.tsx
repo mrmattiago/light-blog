@@ -1,12 +1,16 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import React from 'react';
-// import styles from './Header.style';
+import {header, container} from './Header.style';
 
 type Props = {
-  name: string
+  name?: string
 }
 
 const Header: React.FC<Props> = (props) => {
-  return <header>header {props.name}</header>;
+  return <header css={header}>
+    <div css={container}>Frontend community technology blog</div>
+  </header>;
 }
 
 export default Header;
