@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/core';
-import {CONSTANTS} from '../../config/constants';
+import {CONSTANTS, COLORS} from '../../config/constants';
 
 const blink = keyframes`
   0%{opacity: 0;}
@@ -10,7 +10,7 @@ const header = css`
   padding: 40px 0;
   font-size: 30px;
   background-color: #0f0e0e;
-  border-bottom: 1px dashed #91c530;
+  border-bottom: 1px dashed ${COLORS.GREEN};
 
   h1 {
     font-size: 30px;
@@ -22,7 +22,7 @@ const header = css`
     &:after {
       content: "";
       animation: ${blink} 700ms linear infinite alternate;
-      border-left: 3px solid #b5e853;
+      border-left: 3px solid ${COLORS.GREEN};
     }
   }
 
@@ -44,7 +44,7 @@ const container = css`
     display: inline-block;
     margin-left: -50px;
     margin-right: 10px;
-    color: #b5e853;
+    color: ${COLORS.GREEN};
   }
 `;
 
