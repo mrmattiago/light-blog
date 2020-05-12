@@ -7,7 +7,7 @@ const blink = keyframes`
 `
 
 const header = css`
-  padding: 50px 0;
+  padding: 40px 0;
   font-size: 30px;
   background-color: #0f0e0e;
   border-bottom: 1px dashed #91c530;

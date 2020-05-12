@@ -11,6 +11,7 @@ const Routing = () => (
           <Switch>
             {routes.map((route, i) => (
               <Route
+                key={i}
                 exact={route.exact}
                 path={route.path}
                 render={(props: any) => {
