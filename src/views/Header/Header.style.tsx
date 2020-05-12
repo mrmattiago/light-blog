@@ -8,8 +8,9 @@ const blink = keyframes`
 
 const header = css`
   padding: 40px 0;
+  min-height: 252px;
   font-size: 30px;
-  background-color: #0f0e0e;
+  background-color: ${COLORS.DARK_GREY};
   border-bottom: 1px dashed ${COLORS.GREEN};
 
   h1 {

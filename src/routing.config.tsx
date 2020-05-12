@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react';
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PageWrapper from './views/PageWrapper';
 import routes from './routing.paths';
 

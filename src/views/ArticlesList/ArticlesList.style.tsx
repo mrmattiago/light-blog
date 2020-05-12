@@ -25,8 +25,8 @@ const articlesList = css`
       content: "/";
       font-size: 26px;
       color: ${COLORS.GREEN};
-      margin-left: -17px;
-      margin-right 2px;
+      margin-left: -20px;
+      margin-right 5px;
       line-height: 16px;
     }
   }

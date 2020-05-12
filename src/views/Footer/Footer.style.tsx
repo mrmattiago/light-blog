@@ -4,9 +4,13 @@ import {CONSTANTS, COLORS} from '../../config/constants';
 const footer = css`
   padding: 25px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   background-color: #0f0e0e;
   border-top: 1px dashed ${COLORS.GREEN};
+  
+  a {
+    color: ${COLORS.LIGHT_GREY}
+  }
 `;
 
 const container = css`
