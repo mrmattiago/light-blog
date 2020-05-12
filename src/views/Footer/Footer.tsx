@@ -8,7 +8,7 @@ type Props = {}
 const Footer: FunctionComponent<Props> = (props) => {
   return (
     <footer css={footer}>
-      <div css={container}>&copy; Light Blog 2020</div>
+      <div css={container}>&copy; Light Blog 2020 by @Mat</div>
     </footer>
   );
 }
