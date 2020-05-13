@@ -18,9 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div style={{margin: '50px 0'}}>
-      <ArticlesList articles={articles} />
-    </div>
+    <ArticlesList articles={articles} />
   );
 };
 

@@ -19,7 +19,7 @@ const mainContent = css`
 const container = css`
   max-width: ${CONSTANTS.MAX_PAGE_WIDTH};
   width: ${CONSTANTS.PAGE_WIDTH};
-  margin: auto;
+  margin: 50px auto;
 `;
 
 export { pageWrapper, mainContent, container };

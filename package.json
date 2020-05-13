@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && aws s3 cp ./build s3://light-blog --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive"
   },
   "eslintConfig": {
     "extends": "react-app"
