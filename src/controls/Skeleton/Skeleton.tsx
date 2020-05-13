@@ -9,9 +9,9 @@ type Props = {};
 const Skeleton: FunctionComponent<Props> = (props) => {
   return (
     <div css={skeleton}>
-      <SkeletonMaterialUI animation="wave" variant="rect" width={400} height={35} />
-      <SkeletonMaterialUI animation="wave" variant="text" width={200} />
-      <SkeletonMaterialUI animation="wave" variant="rect" width={600} height={70} />
+      <SkeletonMaterialUI animation="wave" variant="rect" width={600} height={40} />
+      <SkeletonMaterialUI animation="wave" variant="text" width={400} height={25} />
+      <SkeletonMaterialUI animation="wave" variant="rect" width={800} height={100} />
     </div>
   );
 };
