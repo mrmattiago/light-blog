@@ -6,6 +6,8 @@ Light blog app based on stack:
 - reactJS
 - emotion
 - react router dom
+- typescript
+- material ui
 - aws cognito
 - aws lambda
 - aws api gateway
