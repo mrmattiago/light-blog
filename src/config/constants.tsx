@@ -16,6 +16,7 @@ const COLORS = {
 
 const API = {
   ARTICLES: 'https://e1qf63lnk3.execute-api.eu-west-1.amazonaws.com/dev/articles',
+  ARTICLE: 'https://e1qf63lnk3.execute-api.eu-west-1.amazonaws.com/dev/articles',
 };
 
 const MENU = [

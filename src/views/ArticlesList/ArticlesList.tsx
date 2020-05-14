@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 import {FunctionComponent, useState} from 'react';
+import {Link} from "react-router-dom";
 import Skeleton from '../../controls/Skeleton';
 import Pagination from '../../controls/Pagination';
 import {articlesListContainer, articlesList} from './ArticlesList.style';
@@ -23,6 +24,10 @@ const ArticlesList: FunctionComponent<Props> = ({articles}) => {
     return Math.ceil(allItems/CONSTANTS.ELEMENTS_PER_PAGE);
   };
 
+  const getFirstNumberOfWords = (string: string, number:  number) => {
+    return string.split(" ").splice(0, number).join(" ");
+}
+
   const buildListItem = (items: string[]) => {
     return (
       <ul css={articlesListContainer}>
@@ -31,10 +36,10 @@ const ArticlesList: FunctionComponent<Props> = ({articles}) => {
             return (
               <li css={articlesList} key={i}>
                 <h2>
-                  <a href="/">{article.title}</a>
+                  <Link to={`/article/${article.articleId}`}>{article.title}</Link>
                 </h2>
                 <time>{new Date(article.createdAt).toLocaleDateString('pl-PL')}</time> by {article.author}
-                <p>{article.body}</p>
+                <div dangerouslySetInnerHTML={{ __html: `${getFirstNumberOfWords(article.body, 40)} ...` }} />
               </li>
             )
           }

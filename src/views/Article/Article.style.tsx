@@ -1,14 +1,8 @@
 import { css } from '@emotion/core';
 import {COLORS} from '../../config/constants';
 
-const articlesListContainer = css`
-  margin-left: -40px;
-`;
-
-const articlesList = css`
-  list-style: none;
+const article = css`
   line-height: 1.4;
-  display: list-item;
   margin: 50px 0;
 
   h2 {
@@ -59,4 +53,4 @@ const articlesList = css`
 `;
 
 
-export { articlesListContainer, articlesList };
+export { article };

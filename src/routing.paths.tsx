@@ -3,6 +3,7 @@ import {lazy} from 'react';
 const Home = lazy(() => import(/* webpackChunkName: 'Home' */ './pages/Home'));
 const PastArticles = lazy(() => import(/* webpackChunkName: 'PastArticles' */ './pages/PastArticles'));
 const AboutAuthor = lazy(() => import(/* webpackChunkName: 'PastArticles' */ './pages/AboutAuthor'));
+const Article = lazy(() => import(/* webpackChunkName: 'Article' */ './pages/Article'));
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
     {
         path: '/about-author',
         component: AboutAuthor,
+        exact: true
+    },
+    {
+        path: '/article/:articleId',
+        component: Article,
         exact: true
     },
 ];
