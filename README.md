@@ -14,4 +14,4 @@ Light blog app based on stack:
 
 Serverless backend, based on labdas functions with dynamoDB.
 
-In case of questions please contact me directy on [email](mateusz.jach@gmail.com)
+In case of questions please contact me directy on [email](mailto:mateusz.jach@gmail.com)
