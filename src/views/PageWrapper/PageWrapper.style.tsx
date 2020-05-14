@@ -20,6 +20,21 @@ const container = css`
   max-width: ${CONSTANTS.MAX_PAGE_WIDTH};
   width: ${CONSTANTS.PAGE_WIDTH};
   margin: 50px auto;
+
+  a {
+    text-decoration: none;
+    color: ${COLORS.LIGHT_GREY};
+
+    &:hover, :active {
+      color: ${COLORS.WHITE};
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 export { pageWrapper, mainContent, container };

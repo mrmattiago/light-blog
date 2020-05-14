@@ -2,6 +2,13 @@ import React, {Suspense} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PageWrapper from './views/PageWrapper';
 import routes from './routing.paths';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
+const path = (/#!(\/.*)$/.exec(window.location.hash) || [])[1];
+if (path) {
+  history.replace(path);
+}
 
 const Routing = () => (
   <Router>
